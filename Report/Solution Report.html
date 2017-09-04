@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Assessment Report_Associate_01</title>
+
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+							<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Aug 31, 2017 01:19:43 AM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='88.462%'><span class='strong'>23</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.846%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>2</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Application Quality</span>
+						<span class='test-time'>Aug 31, 2017 01:19:48 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2017 01:19:48 AM</span>
+	<span class='label end-time'>Aug 31, 2017 01:20:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 7s+576ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='author-list'>
+				<span class='author label white-text'>CandidateNameWillbeShownedHere</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:20:33 AM</td>
+					<td class='step-details'><table border="1"> <tr> <td><b>Specification</b></td> <td>100.0 %</td> </tr> <tr> <td><b>API Accuracy</></td> <td>65.0 %</td> </tr> <tr> <td><b>Responsiveness</b></td> <td>100 %</td> </tr><tr> <td><b>Skill Check</b></td> <td>98.0 %</td> </tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'><b>Specification</b></div>						
+						<span class='node-time'>Aug 31, 2017 01:19:48 AM</span>
+						<span class='node-duration'>0h 0m 43s+291ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:19:49 AM</td>
+													<td class='step-details'><b>TS01:</b><br/>Two tabs i.e. 'Get new insurance' tab and 'renew insurance' tab are created. Along with headers and footers of the page.<br/><b>Score:</b><br/>5/5</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:19:51 AM</td>
+													<td class='step-details'><b>TS02:</b><br/>Both tabs are able to switch when clicked on radio buttons on the top.<br/><b>Score:</b><br/>5/5</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:19:54 AM</td>
+													<td class='step-details'><b>TS03:</b><br/>'Get new insurance' tab is having 3 drop down fields, 2 text fields and 1 submit button<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:19:56 AM</td>
+													<td class='step-details'><b>TS04:</b><br/>All 3 drop down fields are pre-filled with required data by making 'HTTP GET' request.<br/> Car: has pre filled list of cars.<br/>Fuel type: has pre filled list of fuel types.<br/>State :  has pre filled list of statesAlong with headers and footers of the page.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:19:58 AM</td>
+													<td class='step-details'><b>TS06:</b><br/>'Renew insurance' tab is having 1 input box and 1 submit button<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:01 AM</td>
+													<td class='step-details'><b>TS07:</b><br/>User Name is having minimum length of 2 and maximum length of 50. If not, proper error message is shown below the field<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:04 AM</td>
+													<td class='step-details'><b>TS08:</b><br/>Phone number is having exact length of 10 digits and all are numbers, if not, proper error message is shown below the field.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:06 AM</td>
+													<td class='step-details'><b>TS09:</b><br/>In 'renew insurance' tab policy number is mandatory. Proper error message is shown below the field.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:09 AM</td>
+													<td class='step-details'><b>TS10:</b><br/>Once all fields are valid, form is submitted to fetch the list of insurance.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:12 AM</td>
+													<td class='step-details'><b>TS11:</b><br/>'HTTP GET' request is sent to server along with all the required information.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:14 AM</td>
+													<td class='step-details'><b>TS12:</b><br/>Response is coming properly and response data is properly binded to the view (html) as per the mock ups/design.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:17 AM</td>
+													<td class='step-details'><b>TS14:</b><br/>User is able to drag and drop policy back and forth in box 1 and box 2 (which are drag able and droppable ).<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:20 AM</td>
+													<td class='step-details'><b>TS15:</b><br/>User can drop exactly 1 policy in box 2. Validation is proper, no more than 1 policy can be dropped in box 2.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:23 AM</td>
+													<td class='step-details'><b>TS16:</b><br/>User clicks on buy insurance button and box 2 does not contain any policy, proper error message is displayed.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:29 AM</td>
+													<td class='step-details'><b>TS20:</b><br/>Calculation of 'status' field logic is working. Status will tell if policy is expired or not.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:32 AM</td>
+													<td class='step-details'><b>TS21:</b><br/>If Policy is expired then only 'renew insurance' button is enabled. Else button is disabled.<br/><b>Score:</b><br/>6/6</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'><b>API Accuracy</b></div>						
+						<span class='node-time'>Aug 31, 2017 01:20:33 AM</span>
+						<span class='node-duration'>0h 0m 0s+535ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:20:33 AM</td>
+													<td class='step-details'><b>TS017</b><br/>http://localhost:3000/api/addInsurance<br/>User click on buy insurance and front end is making proper 'HTTP POST' request to buy an insurance. Once purchase is successful, proper success message is shown to user with policy number and number of days left for expiry.<br/><i>Response:</i><br/>{"status":"success","data":{"policyNumber":"369368753330"}}<br/><i>Reason:</i><br/>1 expectation failed.
+JSON path data.expireDate doesn't match.
+Expected: not null
+  Actual: null
+<br/><b>Score:</b><br/>0/35</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:33 AM</td>
+													<td class='step-details'><b>TS018</b><br/>http://localhost:3000/api/getInsurance/456304181358<br/>'Get details' button is clicked, making a 'HTTP GET' request fetch the details of insurance policy. If policy number does not exist. Show a proper error message.<br/><i>Response:</i><br/>{"status":"success","data":{"purchaseDate":"2017-08-30 19:50:33","policyNumber":"456304181358","userName":"xxxx","phoneNumber":1234567890,"carType":"maruti-Ritz","fuelType":"diesel","registrationState":"Chhattisgarh","plan":{"name":"Bajaj Allianz","price":12500}}}<br/><i>Message:</i><br/>success<br/><b>Score:</b><br/>35/35</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:33 AM</td>
+													<td class='step-details'><b>TS019</b><br/>http://localhost:3000/api/getInsurance/456304181358<br/>Once 'HTTP GET' request is successful, all details are binded in the view.<br/><i>Response:</i><br/>{"status":"success","data":{"purchaseDate":"2017-08-30 19:50:33","policyNumber":"456304181358","userName":"xxxx","phoneNumber":1234567890,"carType":"maruti-Ritz","fuelType":"diesel","registrationState":"Chhattisgarh","plan":{"name":"Bajaj Allianz","price":12500}}}<br/><i>Message:</i><br/>success<br/><b>Score:</b><br/>30/30</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'><b>Website Load Time</b></div>						
+						<span class='node-time'>Aug 31, 2017 01:20:33 AM</span>
+						<span class='node-duration'>0h 0m 0s+17ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>1:20:33 AM</td>
+													<td class='step-details'><b>Load Time:</b><br/>7 ms</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'><b>Responsiveness</b></div>						
+						<span class='node-time'>Aug 31, 2017 01:20:33 AM</span>
+						<span class='node-duration'>0h 0m 22s+593ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:39 AM</td>
+													<td class='step-details'>Nexus 7+<img data-featherlight='1504122639938.png' width='10%' src='1504122639938.png' data-src='1504122639938.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:45 AM</td>
+													<td class='step-details'>iPad Pro+<img data-featherlight='1504122645583.png' width='10%' src='1504122645583.png' data-src='1504122645583.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:51 AM</td>
+													<td class='step-details'>iPhone 6+<img data-featherlight='1504122651368.png' width='10%' src='1504122651368.png' data-src='1504122651368.png'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:20:56 AM</td>
+													<td class='step-details'>iPad+<img data-featherlight='1504122656512.png' width='10%' src='1504122656512.png' data-src='1504122656512.png'></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Skill Check</b></span>
+						<span class='test-time'>Aug 31, 2017 01:20:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 31, 2017 01:20:33 AM</span>
+	<span class='label end-time'>Aug 31, 2017 01:20:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:20:33 AM</td>
+					<td class='step-details'><b>Total Percentage:</b><br/>98.0 %</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:20:33 AM</td>
+					<td class='step-details'><table border="1"> <tr> <td><b>Features</b></td> <td><b>Status</b></td><td><b>Test Scenario ID's</b></td> <td><b>Weightage</b></td> <td><b>Score</b></td></tr><tr><td>HTML5 - Elements/Tags</td><td style="color:green;">Area of excellence</td><td>TS01,TS02</></td> <td>100</td><td>100</></td></tr><tr><td>HTML5-Forms</td><td style="color:green;">Area of excellence</td><td>TS03,TS06</></td> <td>100</td><td>100</></td> </tr><tr><td>HTML5 - Drag and Drop</td><td style="color:green;">Area of excellence</td><td>TS14,TS15,TS16</></td> <td>100</td><td>100</></td> </tr><tr><td>HTML5 - Local Storage</td><td style="color:green;">Area of excellence</td><td>TS11</></td> <td>100</td><td>100</></td> </tr><tr><td>CSS3</td><td style="color:green;">Area of excellence</td><td>TS05,TS13</></td> <td>100</td><td>100</></td></tr><tr><td>Bootstrap - Bootstrap grid system</td><td style="color:green;">Area of excellence</td><td>TS05,TS13</></td> <td>100</td><td>100</></td></tr><tr><td>JavaScript Flow Control</td><td style="color:green;">Area of excellence</td><td>TS19,TS20</></td> <td>100</td><td>100</></td> </tr><tr><td>jQuery - Event Handling</td><td style="color:green;">Area of excellence</td><td>TS07,TS08</></td> <td>100</td><td>100</></td> </tr><tr><td>jQuery - Selectors</td><td style="color:green;">Area of excellence</td><td>TS08,TS09,TS21</></td> <td>100</td><td>100</></td> </tr><tr><td>jQuery - Filters & Traversing</td><td style="color:green;">Area of excellence</td><td>TS19,TS20</></td> <td>100</td><td>100</></td></tr><tr><td>Manipulating HTML Elements & Attributes</td><td style="color:green;">Area of excellence</td><td>TS04,TS09</></td> <td>100</td><td>100</></td></tr><tr><td>jQuery AJAX, JSON</td><td style="color:orange;">Area of minor improvement</td><td>TS04,TS10,TS11,TS12,TS17,TS18</></td> <td>100</td><td>80</></td></tr><tr><td></td><td style="color:green;"><b>PASS</b></td><td></></td> <td>1200</td><td>1180</></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>CandidateNameWillbeShownedHere</span>
+                                <span class='author-status right'>
+                                        <span class='label fail'>1</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aug 31, 2017 01:19:48 AM</td>
+                                                <td class='linked' test-id='1'>Application Quality</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>5</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>26</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Aug 31, 2017 01:19:43 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Aug 31, 2017 01:20:57 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>73,816ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>SBA</td>
+								<td>jQuery - Insurance - Solution Kit</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 4,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 23,
+				failChild: 1,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 2,
+				exceptionsChild: 1,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/5ed7b0c339b51aa347b44ccaa2e2ff29905b2f9f/dist/js/extent.js' type='text/javascript'></script>
+		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$('#test-view-charts').addClass('hide');
+			});
+		</script>
+		
+	</body>
+	
+</html>
