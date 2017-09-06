@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="86591" started-at="2017-08-30T19:52:12Z" finished-at="2017-08-30T19:53:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="86591" started-at="2017-08-30T19:52:12Z" finished-at="2017-08-30T19:53:38Z">
+      <class name="testSuite.Sample2">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testSuite.Sample2@d4004b]" name="setup" is-config="true" duration-ms="4852" started-at="2017-08-31T01:22:07Z" finished-at="2017-08-31T01:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="1" started-at="2017-08-31T01:22:12Z" finished-at="2017-08-31T01:22:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.report()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testSuite.Sample2@d4004b]" name="report" duration-ms="18" started-at="2017-08-31T01:22:12Z" finished-at="2017-08-31T01:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="1" started-at="2017-08-31T01:22:12Z" finished-at="2017-08-31T01:22:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.specification() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="specification()[pri:1, instance:testSuite.Sample2@d4004b]" name="specification" duration-ms="62915" started-at="2017-08-31T01:22:12Z" finished-at="2017-08-31T01:23:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- specification -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="0" started-at="2017-08-31T01:23:15Z" finished-at="2017-08-31T01:23:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.mobileEmulation(java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="mobileEmulation(java.lang.String, java.lang.String)[pri:2, instance:testSuite.Sample2@d4004b]" name="mobileEmulation" duration-ms="5732" started-at="2017-08-31T01:23:15Z" data-provider="deviceName" finished-at="2017-08-31T01:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nexus 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileEmulation -->
+        <test-method status="PASS" signature="mobileEmulation(java.lang.String, java.lang.String)[pri:2, instance:testSuite.Sample2@d4004b]" name="mobileEmulation" duration-ms="5765" started-at="2017-08-31T01:23:20Z" data-provider="deviceName" finished-at="2017-08-31T01:23:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPad Pro]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPhone 6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileEmulation -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="0" started-at="2017-08-31T01:23:20Z" finished-at="2017-08-31T01:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.mobileEmulation(java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="0" started-at="2017-08-31T01:23:26Z" finished-at="2017-08-31T01:23:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.mobileEmulation(java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="mobileEmulation(java.lang.String, java.lang.String)[pri:2, instance:testSuite.Sample2@d4004b]" name="mobileEmulation" duration-ms="6399" started-at="2017-08-31T01:23:26Z" data-provider="deviceName" finished-at="2017-08-31T01:23:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileEmulation -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:testSuite.Sample2@d4004b]" name="nameBefore" is-config="true" duration-ms="0" started-at="2017-08-31T01:23:33Z" finished-at="2017-08-31T01:23:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSuite.Sample2.mobileEmulation(java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="mobileEmulation(java.lang.String, java.lang.String)[pri:2, instance:testSuite.Sample2@d4004b]" name="mobileEmulation" duration-ms="5343" started-at="2017-08-31T01:23:33Z" data-provider="deviceName" finished-at="2017-08-31T01:23:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPhone 6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileEmulation -->
+        <test-method status="PASS" signature="finish()[pri:0, instance:testSuite.Sample2@d4004b]" name="finish" is-config="true" duration-ms="368" started-at="2017-08-31T01:23:38Z" finished-at="2017-08-31T01:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- testSuite.Sample2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
